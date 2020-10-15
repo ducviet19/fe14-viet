@@ -1,57 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>
-        Html CRUD with Pure JavaScript
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="../img/icon.png">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                    <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
-                    </div>
-                    <div>
-                        <label>EMP Code</label>
-                        <input type="text" name="empCode" id="empCode">
-                    </div>
-                    <div>
-                        <label>Salary</label>
-                        <input type="text" name="salary" id="salary">
-                    </div>
-                    <div>
-                        <label>City</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </td>
-            <td>
-                <table class="list" id="employeeList">
-                    <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>EMP Code</th>
-                            <th>Salary</th>
-                            <th>City</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
 
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <script src="index.js"></script>
+    <div class="pos">
+        <div>a</div>
+        <div>b</div>
+    </div>
+    <div id="header">
+        <div id="header__top">
+            <div class="header__top--left">
+                <a href=""><i class="fas fa-user-tag"> My Account</i> </a>
+                <a href=""><i class="fas fa-sort"> Order Tracking</i> </a>
+            </div>
+            <div class="header__top--right">
+                <input type="text" placeholder="Search..">
+                <i class="fas fa-phone-square-alt">+8403824008</i>
+                <div class="header__top--img">
+                    <i class="fab fa-facebook"><a href=""></a></i>
+                    <i class="fab fa-twitch"><a href=""></a></i>   
+                    <i class="fas fa-envelope"><a href=""></a></i>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="header__bot">
+            <div class="header__bot--left">
+                <div>
+                    <img
+                        src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.15752-9/cp0/121059865_277359899979063_5207529307752803620_n.png?_nc_cat=110&_nc_sid=ae9488&_nc_ohc=Yo1Es5UbReoAX_JPYdr&_nc_ht=scontent.fsgn2-6.fna&oh=7396e2a38ee63123b9f1c85a7cc87709&oe=5FA60D3E" />
+                </div>
+                <div class="bot__left--title">
+                    <h3>SEVEN</h3>
+                    <h4>WEED</h4>
+                </div>
+            </div>
+            <div class="header__bot--right">
+                <a href="" rel="">HOME</a>
+                <a href="" rel="">ABOUT US</a>
+                <a href="" rel="">VISIT DISPENSARY</a>
+                <a href="" rel="">BUY ONLINE</a>
+                <a href="" rel="">NEWS</a>
+                <a href="" rel="">CONTACT</a>
+                <a href="" rel="">50:50</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-text">
+          <h1 style="font-size:50px">VISIT SEVEN WEED DISPENSARY</h1>
+          <h3>We offer a wide selection of premium canabits products </h3>
+          <h3>Come by for a visit to one of our brand storest</h3>
+          <button>Get directions</button>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="main__top">
+            <h4>Stote licensed recreational & medical cannabis dispensary</h4>
+            <h3>Wellcome to Seven Weed - one of the oldest & most trust cannabis dispensaries in Los Angeles, California
+            </h3>
+        </div>
+        <div class="main__bot">
+            <div class="main__bot--left">
+                <div>
+                    <h4 class="bot__left--header">Proin ollicitudin nibh interdum - mollis dotor auctor
+                        dolor pretium, nec faucibus turples eleifeid.
+                    </h4>
+                    <br>
+                    <p>Our auctor at larem ipsum dolor nulla glaviridac - nibh interdum a interdum
+                        vol sollicitudin nibhlod.
+                    </p>
+                    <br>
+                    <p>Susspendisse auctor volutpat turpís, vol solliicitudin nibh interdum non.
+                        Praasent quie tortor at est finibus dignissim quis id lea. Susspenddisse tempor
+                        adia !
+                    </p>
+                </div>
+                <div class="bot__left--footer">
+                    <button>Visit dispensary</button>
+                    <button>Buy Online</button>
+                </div>
+            </div>
+            <div class="main__bot--right">
+                <img width="400px"
+                    src="asset/pexels-quang-nguyen-vinh-2159065.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_bot">
+            <img src="https://img.icons8.com/ios/50/000000/chat-message.png"/>
+            <h5>Get Consultation</h5>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/ios/50/000000/shop.png"/>
+            <h5>Order Online</h5>  
+        </div>
+        <div>
+            <img src="https://img.icons8.com/ios/50/000000/marker-i.png"/>
+           <h5>Visit Seven Weed</h5>       
+        </div>
+    </div>
+
 </body>
 
 </html>
